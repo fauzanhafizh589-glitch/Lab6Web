@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6 - JavaScript DOM & Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Praktikum 6: DOM & Event Handling</h1>
+
+        <!-- Latihan 1 & 2 -->
+        <section class="card">
+            <h2>Latihan 1 & 2: Manipulasi Teks & Event Click</h2>
+            <h3 id="judul">Latihan DOM</h3>
+            <p id="pesan">Belum ada tindakan.</p>
+            <button id="tombolAksi" type="button">Klik Saya</button>
+        </section>
+
+        <!-- Latihan 3 -->
+        <section class="card">
+            <h2>Latihan 3: Mengubah Kelas & Gaya CSS</h2>
+            <p id="teksGaya">Paragraf ini akan berubah gayanya saat tombol diklik.</p>
+            <button id="tombolGaya" type="button">Ubah Gaya</button>
+        </section>
+
+        <!-- Latihan 4 -->
+        <section class="card">
+            <h2>Latihan 4: Penghitung Karakter</h2>
+            <label for="namaInput">Nama:</label>
+            <input type="text" id="namaInput" maxlength="40" placeholder="Ketik sesuatu...">
+            <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+        </section>
+
+        <!-- Latihan 5 -->
+        <section class="card">
+            <h2>Latihan 5: Validasi Form Pendaftaran</h2>
+            <form id="formPendaftaran" novalidate>
+                <div class="form-group">
+                    <label for="nama">Nama lengkap</label>
+                    <input id="nama" name="nama" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="form-group">
+                    <label for="usia">Usia</label>
+                    <input id="usia" name="usia" type="number" min="17" max="100">
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+            <p id="pesanForm" aria-live="polite"></p>
+        </section>
+
+        <!-- Latihan 6 -->
+        <section class="card">
+            <h2>Latihan 6: To-do List (Daftar Tugas)</h2>
+            <label for="inputTugas">Tugas baru</label>
+            <div class="todo-input-group">
+                <input id="inputTugas" type="text" placeholder="Masukkan tugas...">
+                <button id="tambahTugas" type="button">Tambah</button>
+            </div>
+            <p id="pesanTugas" aria-live="polite"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+
+        <!-- Mini Project: Form Pendaftaran Workshop -->
+        <section class="card highlight-project">
+            <h2>Mini Project: Pendaftaran Workshop</h2>
+            <form id="formWorkshop" novalidate>
+                <div class="form-group">
+                    <label for="wsNama">Nama Lengkap (Min. 3 karakter):</label>
+                    <input type="text" id="wsNama" name="wsNama">
+                </div>
+                <div class="form-group">
+                    <label for="wsEmail">Email:</label>
+                    <input type="email" id="wsEmail" name="wsEmail">
+                </div>
+                <div class="form-group">
+                    <label for="wsSesi">Pilihan Sesi Workshop:</label>
+                    <select id="wsSesi" name="wsSesi">
+                        <option value="">-- Pilih Sesi --</option>
+                        <option value="Frontend Dasar">Sesi 1: Frontend Dasar (HTML/CSS/JS)</option>
+                        <option value="UI/UX Design">Sesi 2: UI/UX Design dasar dengan Figma</option>
+                        <option value="Backend Pemula">Sesi 3: Pengenalan Backend Node.js</option>
+                    </select>
+                </div>
+                <p>Ringkasan Pilihan Sesi: <span id="ringkasanSesi" style="font-weight: bold; color: #3478c8;">Belum dipilih</span></p>
+                
+                <div class="btn-group">
+                    <button type="submit" id="btnKirimWs">Kirim Pendaftaran</button>
+                    <button type="reset" id="btnResetWs">Reset Form</button>
+                </div>
+            </form>
+            <p id="pesanWorkshop" aria-live="polite"></p>
+        </section>
+    </main>
+
+</body>
+</html>

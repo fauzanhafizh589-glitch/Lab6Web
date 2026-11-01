@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.6;
+    color: #333;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+/* Style Latihan 3 */
+.highlight {
+    color: #173f75;
+    background-color: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+.teks-besar { 
+    font-size: 1.4rem; 
+}
+
+/* Style Latihan 6 & Mini Project (To-Do List) */
+.selesai span { 
+    text-decoration: line-through; 
+    color: #687386; 
+}
+li { 
+    margin-bottom: 8px; 
+}
